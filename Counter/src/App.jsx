@@ -7,7 +7,9 @@ function App() {
   const [count, setCount] = useState(15)
 
   const increaseCount = ()=>{
-  setCount(count+1)
+  setCount(prevCounter => prevCounter + 1)
+  setCount(prevCounter => prevCounter + 1)
+  setCount(prevCounter => prevCounter + 1)
 }
 
 const decreaseCount = ()=> {
